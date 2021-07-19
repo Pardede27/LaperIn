@@ -1,0 +1,138 @@
+@media screen and (max-width: 500px) {
+  nav{
+      z-index: -10;
+      position: absolute;
+      display: block;
+      top: 70px;
+      width: 100%;
+      margin-left: -60px;
+      height: 100%;
+      text-align: center;
+      -webkit-transform: translate(-450px, 0);
+      transform: translate(0, -450px);
+      transition: transform 0.3s ease;
+  }
+  .open {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+  }
+  .nav__item{
+      display: list-item;
+      width: 100%;
+  }
+  .hero{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../public/images/heros/hero-image_4-medium.jpg");
+  }
+  .bg1{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../public/images/heros/hero-image_2-medium.jpg");
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .detail-picture img{
+      height: 270px;
+  }
+}
+@media screen and (min-width: 501px) {
+  .header__menu{
+      display: none;
+  }
+  .info, .list{
+      width: 80%;
+  }
+  .detail-description h1, .detail-review h1{
+      font-size: 32px;
+  }
+  .detail-description p{
+      font-size: 16px;
+  }
+  .menus h2, .other-info h2{
+      font-size: 26px;
+  }
+  .menus h3, .other-info h3, .review h3{
+      font-size: 20px;
+  }
+  .menus p, .other-info p, .review p{
+      font-size: 15px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .resto__list{
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .detail-picture img{
+      height: 350px;
+  }
+  .menus h2, .other-info h2{
+      font-size: 28px;
+  }
+  .menus h3, .other-info h3{
+      font-size: 24px;
+  }
+  .menus p, .other-info p{
+      font-size: 16px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .hero__title{
+      font-size: 80px;
+  }
+  .main-info{
+      display: flex;
+      justify-content: space-between;
+  }
+  .detail-description h1{
+      font-size: 32px;
+  }
+  .detail-description p{
+      font-size: 16px;
+  }
+  .menus h2, .other-info h2{
+      font-size: 24px;
+  }
+  .menus h3, .other-info h3{
+      font-size: 20px;
+  }
+  .menus p, .other-info p{
+      font-size: 15px;
+  }
+  .menus, .other-info{
+      width: 48%;
+  }
+  .detail-container{
+      width: 80%;
+  }
+  .detail-description p{
+      width: 65%;
+      margin: 0px auto;
+  }
+}
+@media screen and (min-width: 900px) {
+  .hero__title{
+      font-size: 100px;
+  }
+  .detail-picture img{
+      height: 425px;
+  }
+  .resto__list{
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .info, .list{
+      width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title{
+      font-size: 120px;
+  }
+  .resto__list{
+      max-width: 1000px;
+      padding: 0;
+  }
+  .info, .list{
+      width: 30%;
+  }
+  .detail-container{
+      max-width: 1000px;
+  }
+}
